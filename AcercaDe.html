@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acerca de - Empresa de Agua</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e7f4fa;
+  }
+  .ml-2 {
+color: #0572ad;
+font-family: 'Segoe UI', Tahoma;
+font-size: 200%;
+  }
+  /* Estilo personalizado del logo tipo "B" */
+  .logo-badge {
+    color: white;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 1.2em; 
+  }
+  
+ /* Opcional: resaltar el enlace activo del menú */
+ .nav-item.active .nav-link,
+ .nav-link:hover {
+   background-color: #158af8;
+   color: rgb(255, 255, 255) !important;
+   border-radius: 8px;
+   padding: 6px 12px;
+   transition: 0.2s;
+ }
+  
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #e7f4fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .acerca {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .acerca h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #0077b6;
+      margin-bottom: 20px;
+      font-family: 'Montserrat ExtraBold';
+    }
+
+    .contenido {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .contenido img {
+      flex: 1;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .texto {
+      flex: 2;
+    }
+
+    .texto p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+
+    .texto ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .texto ul li {
+      margin-bottom: 8px;
+      list-style: disc;
+    }
+
+    @media (max-width: 768px) {
+      .contenido {
+        flex-direction: column;
+      }
+
+      .contenido img {
+        width: 100%;
+      }
+    }
+
+    .footer {
+    background-color: #004266;
+    color: white;
+    padding: 30px 20px;
+    font-size: 0.95em;
+    font-family: Tahoma;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .footer-info,
+  .footer-links,
+  .footer-social {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer h3, .footer h4 {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .footer p,
+  .footer a {
+    margin: 4px 0;
+    color: #f9fdff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social img {
+    width: 50px;
+    margin-right: 10px;
+    /*filter: brightness(0) invert(1);*/
+  }
+  
+  .footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff50;
+    padding-top: 15px;
+    font-size: 0.85em;
+  }
+  </style>
+</head>
+<body>
+<!-- Encabezado responsive -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <span class="logo-badge"><img src="WhatsApp Image 2025-07-02 at 4.02.05 PM.png" height="60" width="60"></span>
+    <span class="ml-2 font-weight-bold">Agua La Cuenca</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="menuPrincipal">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+      <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+      <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
+      <li class="nav-item"><a class="nav-link" href="AcercaDe.html">Acerca de</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Scripts necesarios -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<br>
+<br>
+
+
+  <section class="acerca">
+    <h2>Acerca de Nuestra Empresa</h2>
+    <div class="contenido">
+      <img src="WhatsApp Image 2025-07-03 at 7.33.03 PM.jpeg" alt="Planta de tratamiento de agua">
+      <div class="texto">
+        <p><strong>Agua La Cuenca</strong> Somos una empresa dedicada a la captación, tratamiento, distribución y gestión del agua 
+          potable, comprometida con brindar un servicio eficiente, seguro y sostenible.</p>
+        <p> Nuestra Mision es: Proveer agua potable de alta calidad de forma segura, eficiente y sostenible, garantizando el</p>
+        <p>Contamos con personal capacitado, tecnología de punta y un enfoque centrado en la mejora 
+          continua, para asegurar que cada hogar, escuela o empresa reciba agua de calidad. Nuestra 
+          prioridad es cuidar el recurso más valioso del planeta: el agua.</p>
+        <ul>
+          <li>Más de 5 años de experiencia.</li>
+          <li>Contamos con bienestar fisico y saludable.</li>
+          <li>Protección de fuentes de agua y uso sostenible.</li>
+          <li>Cumplimiento de normas sanitarias y técnicas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Agua La Cuenca</h4>
+        <p>Comprometidos a vender agua purificada cuidando tu salud y bienestar.</p>
+        <br>
+        
+        <p>📍Rio Viejo,La Ceiba,Atlantida</p>
+       
+       
+      </div>
+  
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="AcercaDe.html">Acerca de</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <a href="#"><img src="facebook.png" alt="Facebook">Facebook</a><br>
+        <br>
+        <a href="#"><img src="instagram.png" alt="Instagram">Instagram</a><br>
+        
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 Agua La Cuenca. Todos los derechos reservados.</p>
+      <p>© Desarrollado por Madelis Montufar.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
+
+
+
