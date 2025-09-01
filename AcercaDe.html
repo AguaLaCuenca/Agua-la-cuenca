@@ -3,64 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Acerca de - Empresa de Agua</title>
-
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #e7f4fa;
-  }
-  .ml-2 {
-color: #0572ad;
-font-family: 'Segoe UI', Tahoma;
-font-size: 200%;
-  }
-  /* Estilo personalizado del logo tipo "B" */
-  .logo-badge {
-    color: white;
-    border-radius: 10px;
-    padding: 4px 10px;
-    font-weight: bold;
-    font-size: 1.2em; 
-  }
-  
- /* Opcional: resaltar el enlace activo del menú */
- .nav-item.active .nav-link,
- .nav-link:hover {
-   background-color: #158af8;
-   color: rgb(255, 255, 255) !important;
-   border-radius: 8px;
-   padding: 6px 12px;
-   transition: 0.2s;
- }
-  
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #e7f4fa;
       color: #333;
       line-height: 1.6;
     }
 
+    .ml-2 {
+      color: #0572ad;
+      font-family: 'Segoe UI', Tahoma;
+      font-size: 1.8rem;
+    }
+
+    .logo-badge {
+      color: white;
+      border-radius: 10px;
+      padding: 4px 10px;
+      font-weight: bold;
+      font-size: 1.2em; 
+    }
+
+    .nav-item.active .nav-link,
+    .nav-link:hover {
+      background-color: #158af8;
+      color: #fff !important;
+      border-radius: 8px;
+      padding: 6px 12px;
+      transition: 0.2s;
+    }
+
     .acerca {
       max-width: 1000px;
-      margin: 50px auto;
+      margin: 30px auto;
       background: #ffffff;
-      padding: 40px;
+      padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .acerca h2 {
       text-align: center;
-      font-size: 2.5em;
+      font-size: 2.2rem;
       color: #0077b6;
       margin-bottom: 20px;
       font-family: 'Montserrat ExtraBold';
@@ -76,6 +63,7 @@ font-size: 200%;
     .contenido img {
       flex: 1;
       max-width: 400px;
+      width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
@@ -99,67 +87,104 @@ font-size: 200%;
       list-style: disc;
     }
 
+    @media (max-width: 992px) {
+      .acerca {
+        padding: 20px;
+      }
+
+      .acerca h2 {
+        font-size: 2rem;
+      }
+
+      .texto p {
+        font-size: 1rem;
+      }
+    }
+
     @media (max-width: 768px) {
       .contenido {
         flex-direction: column;
+        text-align: center;
       }
 
       .contenido img {
-        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .texto {
+        flex: 1;
       }
     }
 
     .footer {
-    background-color: #004266;
-    color: white;
-    padding: 30px 20px;
-    font-size: 0.95em;
-    font-family: Tahoma;
-  }
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  .footer-info,
-  .footer-links,
-  .footer-social {
-    flex: 1 1 250px;
-    margin-bottom: 20px;
-  }
-  
-  .footer h3, .footer h4 {
-    margin-bottom: 10px;
-    color: #ffffff;
-  }
-  
-  .footer p,
-  .footer a {
-    margin: 4px 0;
-    color: #f9fdff;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-social img {
-    width: 50px;
-    margin-right: 10px;
-    /*filter: brightness(0) invert(1);*/
-  }
-  
-  .footer-copy {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #ffffff50;
-    padding-top: 15px;
-    font-size: 0.85em;
-  }
+      background-color: #004266;
+      color: white;
+      padding: 30px 20px;
+      font-size: 0.95em;
+      font-family: Tahoma;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-social {
+      flex: 1 1 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer h3, .footer h4 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .footer p,
+    .footer a {
+      margin: 4px 0;
+      color: #f9fdff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-social img {
+      width: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .footer-copy {
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #ffffff50;
+      padding-top: 15px;
+      font-size: 0.85em;
+    }
+
+    @media (max-width: 576px) {
+      .ml-2 {
+        font-size: 1.4rem;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-info,
+      .footer-links,
+      .footer-social {
+        flex: 1 1 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -183,72 +208,61 @@ font-size: 200%;
     </ul>
   </div>
 </nav>
-<!-- Scripts necesarios -->
+
+<section class="acerca">
+  <h2>Acerca de Nuestra Empresa</h2>
+  <div class="contenido">
+    <img src="imagenes/rio.jpeg" alt="Planta de tratamiento de agua">
+    <div class="texto">
+      <p><strong>Agua La Cuenca</strong> Somos una empresa dedicada a la captación, tratamiento, distribución y gestión del agua 
+        potable, comprometida con brindar un servicio eficiente, seguro y sostenible.</p>
+      <p>Nuestra Misión es: Proveer agua potable de alta calidad de forma segura, eficiente y sostenible.</p>
+      <p>Contamos con personal capacitado, tecnología de punta y un enfoque centrado en la mejora 
+        continua, para asegurar que cada hogar, escuela o empresa reciba agua de calidad. Nuestra 
+        prioridad es cuidar el recurso más valioso del planeta: el agua.</p>
+      <ul>
+        <li>Más de 5 años de experiencia.</li>
+        <li>Contamos con bienestar físico y saludable.</li>
+        <li>Protección de fuentes de agua y uso sostenible.</li>
+        <li>Cumplimiento de normas sanitarias y técnicas.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h4>Agua La Cuenca</h4>
+      <p>Comprometidos a vender agua purificada cuidando tu salud y bienestar.</p>
+      <p>📍Rio Viejo, La Ceiba, Atlantida</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="AcercaDe.html">Acerca de</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Síguenos</h4>
+      <a href="https://www.facebook.com/share/1Dbqfy8Hxc/?mibextid=wwXlfr"><img src="imagenes/facebook.png" alt="Facebook">Facebook</a><br><br>
+      <a href="#"><img src="imagenes/instagram.png" alt="Instagram">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <p>© 2025 Agua La Cuenca. Todos los derechos reservados.</p>
+    <p>© Desarrollado por Madelis Montufar.</p>
+  </div>
+</footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<br>
-<br>
-
-
-  <section class="acerca">
-    <h2>Acerca de Nuestra Empresa</h2>
-    <div class="contenido">
-      <img src="imagenes/rio.jpeg" alt="Planta de tratamiento de agua">
-      <div class="texto">
-        <p><strong>Agua La Cuenca</strong> Somos una empresa dedicada a la captación, tratamiento, distribución y gestión del agua 
-          potable, comprometida con brindar un servicio eficiente, seguro y sostenible.</p>
-        <p> Nuestra Mision es: Proveer agua potable de alta calidad de forma segura, eficiente y sostenible, garantizando el</p>
-        <p>Contamos con personal capacitado, tecnología de punta y un enfoque centrado en la mejora 
-          continua, para asegurar que cada hogar, escuela o empresa reciba agua de calidad. Nuestra 
-          prioridad es cuidar el recurso más valioso del planeta: el agua.</p>
-        <ul>
-          <li>Más de 5 años de experiencia.</li>
-          <li>Contamos con bienestar fisico y saludable.</li>
-          <li>Protección de fuentes de agua y uso sostenible.</li>
-          <li>Cumplimiento de normas sanitarias y técnicas.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-info">
-        <h4>Agua La Cuenca</h4>
-        <p>Comprometidos a vender agua purificada cuidando tu salud y bienestar.</p>
-        <br>
-        
-        <p>📍Rio Viejo,La Ceiba,Atlantida</p>
-       
-       
-      </div>
-  
-      <div class="footer-links">
-        <h4>Enlaces</h4>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="AcercaDe.html">Acerca de</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-social">
-        <h4>Síguenos</h4>
-        <a href="https://www.facebook.com/share/1Dbqfy8Hxc/?mibextid=wwXlfr"><img src="imagenes/facebook.png" alt="Facebook">Facebook</a><br>
-        <br>
-        <a href="#"><img src="imagenes/instagram.png" alt="Instagram">Instagram</a><br>
-        
-      </div>
-    </div>
-    <div class="footer-copy">
-      <p>© 2025 Agua La Cuenca. Todos los derechos reservados.</p>
-      <p>© Desarrollado por Madelis Montufar.</p>
-    </div>
-  </footer>
-  
 </body>
 </html>
